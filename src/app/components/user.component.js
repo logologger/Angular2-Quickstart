@@ -11,8 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var UserComponent = (function () {
     function UserComponent() {
-        this.name = 'Rajat Singh Bhadauria';
-        this.email = 'rajatsbhadauria@gmail.com';
+        this.name = 'John Doe';
+        this.email = 'john@email.com';
         this.address = {
             street: '11/399, Vikas Nagar',
             city: 'Lucknow',

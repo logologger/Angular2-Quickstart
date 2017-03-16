@@ -10,11 +10,25 @@ import { Component } from '@angular/core';
 })
 
 export class UserComponent  { 
-	name = 'Rajat Singh Bhadauria';
-	email ='rajatsbhadauria@gmail.com' ;
-	address = {
-		street:'11/399, Vikas Nagar',
-		city:'Lucknow',
-		state:'Uttar Pradesh'
+	name:string;
+	email:string;
+	address:address;
+
+	constructor(){
+		this.name='John Doe';
+		this.email='john@email.com';
+		this.address = {
+
+			street:'11/399, Vikas Nagar',
+			city:'Lucknow',
+			state:'Uttar Pradesh'
+		}
 	}
+}
+
+interface address{
+	
+	street:string;
+	city:string;
+	state:string;
 }
