@@ -13,11 +13,16 @@ var AppComponent = (function () {
     function AppComponent() {
         this.name = 'Rajat Singh Bhadauria';
         this.email = 'rajatsbhadauria@gmail.com';
+        this.address = {
+            street: '11/399, Vikas Nagar',
+            city: 'Lucknow',
+            state: 'Uttar Pradesh'
+        };
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<h1>Hello {{name}}</h1>",
+            template: "\n <user></user>\n  ",
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

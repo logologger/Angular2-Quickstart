@@ -9,21 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var app_component_1 = require('./app.component');
-var user_component_1 = require('./components/user.component');
-var AppModule = (function () {
-    function AppModule() {
+var UserComponent = (function () {
+    function UserComponent() {
+        this.name = 'Rajat Singh Bhadauria';
+        this.email = 'rajatsbhadauria@gmail.com';
+        this.address = {
+            street: '11/399, Vikas Nagar',
+            city: 'Lucknow',
+            state: 'Uttar Pradesh'
+        };
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent, user_component_1.UserComponent],
-            bootstrap: [app_component_1.AppComponent]
+    UserComponent = __decorate([
+        core_1.Component({
+            selector: 'user',
+            template: "\n  <h1>Hello {{name}}</h1>\n  <p><strong>Email </strong> : {{email}}</p>\n  <p><strong>Address </strong>: {{address.city}} {{address.state}} {{address.street}}</p>\n  ",
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], UserComponent);
+    return UserComponent;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.UserComponent = UserComponent;
+//# sourceMappingURL=user.component.js.map
